@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawlyPet - Everything Your Pet Needs</title>
+    <link rel="stylesheet" href="aii.css">
+    <link rel="icon" href="pawlyIcon.png">
+</head>
+<body>
+
+    <!-- Header / Navigation Bar -->
+    <header class="navbar">
+        <!-- Logo -->
+        <a href="#" class="logo">
+            PawlyPet <span>🐾</span>
+        </a>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search products..." class="search-input">
+            <button class="search-btn" aria-label="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Cart Button -->
+        <a href="#" class="cart-btn" id="cart-icon-btn" aria-label="Shopping Cart">
+            <img src="image_copy.png" alt="Cart" class="cart-icon" onerror="this.src='https://cdn-icons-png.flaticon.com/512/263/263142.png'">
+            <span class="cart-count" id="cart-count">0</span>
+        </a>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Everything Your Pets Love 🐾</h1>
+            <p>Premium food, fun toys, and cozy supplies delivered right to your door.</p>
+            <a href="#products" class="btn-primary">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Categories Filter -->
+    <section class="categories">
+        <button class="category-btn active" data-category="all">All Items</button>
+        <button class="category-btn" data-category="dogs">🐶 Dogs</button>
+        <button class="category-btn" data-category="cats">🐱 Cats</button>
+        <button class="category-btn" data-category="accessories">🦴 Accessories</button>
+    </section>
+
+    <!-- Product Grid Section -->
+    <section class="products-container" id="products">
+        <h2>Featured Products</h2>
+        <div class="product-grid" id="product-grid">
+            <!-- Dynamic products loaded via JS -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>PawlyPet 🐾</h3>
+                <p>Making pet parenting easy and joyful.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#">About Us</a>
+                <a href="#">Shop All</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="footer-newsletter">
+                <h4>Stay Updated</h4>
+                <div class="newsletter-box">
+                    <input type="email" placeholder="Enter your email">
+                    <button>Join</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 PawlyPet. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript logic -->
+    <script src="aii.js"></script>
+</body>
+</html>
